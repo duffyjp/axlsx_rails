@@ -17,39 +17,22 @@ Status](https://coveralls.io/repos/straydogstudio/axlsx_rails/badge.svg)](https:
 In your Gemfile:
 
 ```ruby
-gem 'rubyzip', '>= 1.2.1'
-gem 'axlsx', git: 'https://github.com/randym/axlsx.git', ref: 'c8ac844'
 gem 'axlsx_rails'
 ```
 
-**NOTE:** Axlsx has been pending release for a long time. You must specify the master on github to support Rubyzip 1.2.1.
+**NOTE:** 
+* Axlsx has been pending release for a long time.
+* This release uses [Axlsx-alt](https://github.com/fernandoluizao/axlsx-alt) instead.
 
-If `rubyzip 1.0.0` is needed:
-
-```ruby
-gem 'rubyzip', '= 1.0.0'
-gem 'axlsx', '= 2.0.1'
-gem 'axlsx_rails'
-```
-
-If `rubyzip >= 1.1.0` is needed:
-
-```ruby
-gem 'rubyzip', '~> 1.1.0'
-gem 'axlsx', '2.1.0.pre'
-gem 'axlsx_rails'
-```
 
 ## Requirements
 
 * Rails 4.2, 5.0 or 5.1 (tested)
-* For Rails 3.1 or 3.2 use version 3.0
-* **As of 0.5.0 requires Axlsx 2.0.1, but strongly suggests 2.1.0.pre, which requires rubyzip 1.1.0**
 * As of Rails 4.1 you must use `render_to_string` to render a mail attachment.
 
 ## FYI
 
-* This gem depends on [Axlsx](https://github.com/randym/axlsx). See [the blog](http://axlsx.blog.randym.net/) or the [examples page](https://github.com/randym/axlsx/blob/master/examples/example.rb) for usage.
+* This gem depends on [Axlsx-alt](https://github.com/fernandoluizao/axlsx-alt). See [the blog](http://axlsx.blog.randym.net/) or the [examples page](https://github.com/randym/axlsx/blob/master/examples/example.rb) for usage.
 * Check out [axlsx_styler](https://github.com/sakovias/axlsx_styler) by [sakovias](https://github.com/sakovias) for easier styles and borders!
 
 ## Usage
